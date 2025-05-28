@@ -1,0 +1,443 @@
+@font-face {
+    font-family:archivo_black;
+    src: url(../fonts/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+    font-family:inter;
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family:archivo_black, sans-serif;
+}
+
+:root {
+    --green: #629F80;
+    --white: #ffffff;
+    --footer_color: #000000;
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+}
+
+.header_container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.img_p {
+    font-size: clamp(0.5rem, 4.1vw, 5rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
+}
+
+.input input {
+    padding: 10px 10px 10px 30px;
+    border: 1px solid var(--green);
+    border-radius: 9px;
+    background-color: transparent;
+    color: var(--white);
+    width: 50vw;
+}
+
+.input {
+    position: relative;
+}
+
+.input i {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: var(--green);
+}
+
+h1 a,
+.icons,
+.img_p {
+    color: var(--white);
+    border: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.icons {
+    gap: 10px;
+    display: flex;
+}
+
+/* ---------------MAIN======================= */
+.sport_links {
+    margin: 50px;
+}
+
+.sport_links_first,
+.sport_links_second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sport_links a {
+    position: relative;
+    white-space: nowrap;
+}
+
+.sport_links_first img {
+    width: 38vw;
+    filter: brightness(50%);
+}
+
+.sport_links p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+    font-size: clamp(0.8rem, 3.5vw, 5rem);
+    
+}
+
+.sport_links_second img {
+    width: 23vw;
+    filter: brightness(50%);
+}
+
+.sport_links_second p {
+    font-size: clamp(0.9rem, 2.6vw, 5rem);
+}
+
+.best_sel_a {
+    min-height: 60px;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: clamp(0.8rem, 3.5vw, 5rem);
+    margin-bottom: 50px;
+}
+
+.more {
+    width: 25vw;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    margin: auto;
+    font-size: clamp(0.8rem, 2.8vw, 5rem);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* -----------------------OWL_CAROUSEL========= */
+.owl-carousel {
+    margin-bottom: 80px;
+}
+
+.owl-nav {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--green);
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    display: block !important;
+    font-family: none;
+}
+
+.owl-theme article img {
+    border: 1px solid var(--green);
+}
+
+/* ----------------------------FOOTER================ */
+footer {
+    background-color: var(--footer_color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.footer_logo {
+    margin-left: 35px;
+}
+
+footer a {
+    color: var(--white);
+    padding: 1px;
+    font-family:inter, sans-serif;
+}
+
+footer li {
+    margin: 7px;
+}
+
+.contact a:nth-child(1),
+.contact a:nth-child(2) {
+    display: block;
+}
+
+.contact a {
+    margin: 4px 5px;
+}
+
+.mg {
+    margin-bottom: 15px !important;
+}
+
+.marg {
+    margin-bottom: 30px;
+}
+
+.a_color {
+    color: #ffffff95;
+}
+
+/* ---------------MARTIAL_ARTS.HTML_STYLES=========== */
+.martial_art_main_container {
+    margin: 50px 30px;
+}
+
+.main_flex article {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.martial_art_main_container img {
+    width: 20vw;
+}
+
+.main_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.martial_art_main_container p,
+.martial_art_main_container h4 {
+    font-weight: bold;
+    margin-top: 8px;
+    width: 80%;
+}
+.categories,
+.descriprion,
+.color,
+.amount {
+    display: none;
+}
+
+/* ----------------------------PRODUCT.HTML====================== */
+.prod_main {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productImg {
+    width: 33%;
+}
+
+.prod_main section {
+    width: 50%;
+}
+
+.circles_container {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.circles {
+    border-radius: 50%;
+    width: 3.5vw;
+    height: 3.5vw;
+}
+.circles:hover{
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.brown {
+    background-color: #8B4513;
+}
+
+#categories,
+#descriprion,
+#color,
+#amount {
+    color: var(--green);
+    font-size: clamp(0.8rem, 1.5vw, 5rem);
+    margin-bottom: 10px;
+    font-family:inter, sans-serif;
+}
+
+.prod_main h1 {
+    font-size: clamp(0.8rem, 2.3vw, 5rem);
+    margin-bottom: 10px;
+}
+
+.productPrice {
+    font-weight: bold;
+    font-size: clamp(0.8rem, 1vw, 5rem);
+    margin-bottom: 10px;
+}
+
+/* ================== */
+#amount_number_container {
+    width: 9vw;
+    border: 1px solid var(--green);
+    height: 5vw;
+    display: flex;
+    cursor: pointer;
+    font-size: clamp(0.8rem, 1.2vw, 5rem);
+    color: var(--green);
+    font-family:inter, sans-serif;
+}
+
+#amount_number {
+    width: 9vw;
+    border-right: 1px solid var(--green);
+    height: 100%;
+}
+
+#plus {
+    width: 4vw;
+    border-bottom: 1px solid var(--green);
+    height: 50%;
+}
+
+.flex_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy {
+    width: 50%;
+    background-color: var(--green);
+    border: none;
+    margin-top: 30px;
+    color: var(--white);
+    padding: 10px 17px;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 2.1vw, 5rem);
+    display: block;
+    cursor: pointer;
+}
+
+/* ------------------------MEDIA_QUERIES================= */
+
+@media(max-width:530px) {
+    .header_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sport_links {
+        margin: 20px 0;
+    }
+
+    .sport_links_first,
+    .sport_links_second {
+        flex-direction: column;
+    }
+
+    .sport_links_first {
+        margin-bottom: 10px;
+    }
+
+    .sport_links_first img {
+        width: 86vw;
+    }
+
+    .sport_links_second img {
+        width: 76vw;
+    }
+
+    .ul_container {
+        flex-direction: column;
+    }
+
+    .main_flex {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .martial_art_main_container img {
+        width: 90vw;
+    }
+
+    .main_flex article {
+        border: 1px solid #000000;
+        margin-bottom: 15px;
+    }
+    .prod_main {
+    flex-direction: column;
+   }
+}
+
+@media(max-width:460px) {
+    .img_p {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 a {
+        font-size: 20px;
+    }
+
+    header i {
+        font-size: 10px;
+    }
+}
