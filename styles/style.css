@@ -1,9 +1,10 @@
 @font-face {
-    font-family:archivo_black;
+    font-family: archivo_black;
     src: url(../fonts/ArchivoBlack-Regular.ttf);
 }
+
 @font-face {
-    font-family:inter;
+    font-family: inter;
     src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
@@ -14,8 +15,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-    font-family:archivo_black, sans-serif;
+
+body {
+    font-family: archivo_black, sans-serif;
 }
 
 :root {
@@ -119,7 +121,7 @@ h1 a,
     text-align: center;
     color: var(--white);
     font-size: clamp(0.8rem, 3.5vw, 5rem);
-    
+
 }
 
 .sport_links_second img {
@@ -201,7 +203,7 @@ footer a:hover {
 footer a {
     color: var(--white);
     padding: 1px;
-    font-family:inter, sans-serif;
+    font-family: inter, sans-serif;
 }
 
 footer li {
@@ -255,6 +257,7 @@ footer li {
     margin-top: 8px;
     width: 80%;
 }
+
 .categories,
 .descriprion,
 .color,
@@ -289,7 +292,8 @@ footer li {
     width: 3.5vw;
     height: 3.5vw;
 }
-.circles:hover{
+
+.circles:hover {
     border: 2px solid #000000;
     cursor: pointer;
 }
@@ -317,7 +321,7 @@ footer li {
     color: var(--green);
     font-size: clamp(0.8rem, 1.5vw, 5rem);
     margin-bottom: 10px;
-    font-family:inter, sans-serif;
+    font-family: inter, sans-serif;
 }
 
 .prod_main h1 {
@@ -333,24 +337,26 @@ footer li {
 
 /* ================== */
 #amount_number_container {
-    width: 9vw;
+    width: 25%;
     border: 1px solid var(--green);
-    height: 5vw;
     display: flex;
     cursor: pointer;
-    font-size: clamp(0.8rem, 1.2vw, 5rem);
+    font-size: clamp(1.1rem, 1.2vw, 5rem);
     color: var(--green);
-    font-family:inter, sans-serif;
+    font-family: inter, sans-serif;
 }
 
 #amount_number {
-    width: 9vw;
+    width: 70%;
     border-right: 1px solid var(--green);
-    height: 100%;
+    padding: 1.3rem;
+}
+
+.plus_min {
+    width: 30%;
 }
 
 #plus {
-    width: 4vw;
     border-bottom: 1px solid var(--green);
     height: 50%;
 }
@@ -359,6 +365,7 @@ footer li {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .buy {
@@ -413,16 +420,44 @@ footer li {
     }
 
     .martial_art_main_container img {
-        width: 90vw;
+        width: 90%;
     }
 
     .main_flex article {
         border: 1px solid #000000;
         margin-bottom: 15px;
     }
+
     .prod_main {
-    flex-direction: column;
-   }
+        flex-direction: column;
+    }
+
+    .martial_art_main_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prod_main {
+        padding: 0;
+    }
+
+    .prod_main img,
+    .prod_main section {
+        width: 70%;
+    }
+
+    .buy {
+        margin: 2rem auto;
+    }
+
+    #amount_number_container {
+        width: 40%;
+    }
+
+    #amount_number {
+        padding: 0;
+    }
 }
 
 @media(max-width:460px) {
@@ -439,5 +474,11 @@ footer li {
 
     header i {
         font-size: 10px;
+    }
+
+    .martial_art_main_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
